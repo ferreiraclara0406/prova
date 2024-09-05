@@ -1,0 +1,38 @@
+create database prova_2cb;
+use prova_2cb;
+
+create table cliente(
+  id_cliente int,
+  nome_clinte varchar(200),
+  email_cliente varchar(200),
+  telefone int
+  );
+  
+INSERT into cliente (id_cliente, nome_cliente, email_cliente, telefone)
+values (1, 'Alice Souza', 'alice.souza@example.com', 1199999888);
+
+INSERT into cliente (id_cliente, nome_cliente, email_cliente, telefone)
+values(2, 'Bruno Lima','bruno.lima@example.com' , 11988887777);
+
+INSERT into cliente (id_cliente, nome_cliente, email_cliente, telefone)
+values(3, 'Carla Santos','carla.santos@example.com' , 11977776666);
+
+INSERT into cliente (id_cliente, nome_cliente, email_cliente, telefone)
+values(4, 'Daniela Oliveira','daniela.oliveira@example.com' , 11966665555);
+
+INSERT into cliente (id_cliente, nome_cliente, email_cliente, telefone)
+values(5, 'Eduardo Pereira','eduardo.pereira@example.com' , 11955554444);
+
+
+create table pedidos(
+  id_pedidos int,
+  id_cliente int,
+  data_pedido int,
+  total int
+  );
+
+INSERT into pedidos (id_pedido, id_cliente, data_pedido, total)
+values(1, '1','2024-08-01' , 250.00);
+
+INSERT into pedidos (id_pedido, id_cliente, data_pedido, total)
+values(2, '2','2024-08-03' , 250.00);
